@@ -17,6 +17,15 @@
             <meta-data android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/filter_nfc" />
         </activity>
+        
+        <activity android:name="org.qrone.android.idm.idmlist"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
     <uses-feature android:name="android.hardware.nfc" android:required="true" />
 </manifest>
